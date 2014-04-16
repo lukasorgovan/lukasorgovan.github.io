@@ -1,0 +1,71 @@
+/* CSS RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/* MAIN STYLES */
+body {
+	background-color: #0eb282;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #2c3e50;
+}
+.about p {
+	width: 60%;
+}
+h2 {
+	font-size: 2em;
+	margin: 3% 0;
+}
+hr {
+	margin: 20px 0;
+}
+.box {
+	margin: 0 auto;
+	padding: 15%;
+	box-sizing: border-box;
+	font-size: 1.15em;
+	line-height: 1.35em;
+	position: relative;
+}
+.intro {
+	font-size: 3em;
+	font-weight: bold;
+	height: 100%;
+}
+.intro h1 {
+	font-size: 1.5em;
+	color: #ffffff;
+}
+.intro h2 {
+	font-size: 1.35em;
+}
+.about {
+	background-color: #eff3f3;
+}
+.experience {
+	height: 500px;
+	z-index: 3;
+}
+.experience h2 {
+	color: #ffffff;
+}
+.photo {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: url('https://media.licdn.com/mpr/mpr/shrink_200_200/p/5/005/01d/32a/1c3c99d.jpg') no-repeat;
+	float: right;
+}
+.column {
+	float: left;
+	width: 60%;
+	color: #ffffff;
+	font-size: 0.85em;
+	margin: 3% 0;
+}
+.column.left {
+	width: 30%;
+}
+.column h3 {
+	color: #2c3e50;
+	font-size: 1.25em;
+}
+

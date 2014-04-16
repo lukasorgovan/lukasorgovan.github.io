@@ -1,10 +1,61 @@
 <!DOCTYPE>
 <html>
 	<head>
+		<meta charset="utf-8"/>
 		<title>Resume, Lukas Orgovan</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+		<link  href="main.css" rel="stylesheet" type="text/css"/>
 	</head>
 
 	<body>
-		<h1>Hello</h1>
+		<section class="box intro">
+			<h1>Hello<br/>I'm Lukas Orgovan</h1>
+			<h2>front-end developer</h2>
+		</section>
+		<section class="box about">
+			<div class="photo"></div>
+		  <h2>About</h2>
+			<p>
+				I am passionate front-end developer based in Kosice, Slovakia, craftsmanship lover &amp; home bread baker. I love tinkering with CSS and JavaScript as well as working together in a team as you can learn faster and more. My developement experience is more than 3 years. 
+			</p>
+			
+		</section>
+	  <section class="box experience">
+	  	<h2>Experience</h2>
+	  	<hr/>
+	  	<div class="column left">
+	  		<h3>Perform</h3>
+	  		<span>May 2013 - present</span>
+	  	</div>
+	  	<div class="column">
+	  		<h3>Experienced front-end developer</h3>
+	  		<p>Working for Perform as part of Ness Technologies KDC, exploring new posibilities in web developement and working with HTML5, Javascript/jQuery, CSS3, Freemarker and XML on daily basis. I am building sites for large global clients.</p>
+	  	</div>
+	  	<div class="column left">
+	  		<h3>TUKE</h3>
+	  		<span>December 2008 - May 2013</span>
+	  	</div>
+	  	<div class="column">
+	  		<h3>Creative director and student-consultant</h3>
+	  		<p>At Technical University of Kosice I took part in helping other students being employed as consultant for studies at Student information and consulting centre. While providing benefitial information to students I've been working on numerous projects since I joined this non-profit organization. had an oportunity to lead small group of people (3-4) and represent my University on numerous study exhibits like ProEduco, DniKariéry, Academia Vapac... I was also responsible for creating website for this organization, visual identity and I am cooperating on University magazine named HALÓ</p>
+	  	</div>
+	  	<div class="column left">
+	  		<h3>Selfemployed</h3>
+	  		<span>2010 - 2012</span>
+	  	</div>
+	  	<div class="column">
+	  		<h3>Web design &amp; developement</h3>
+	  		<p>Within my studies I worked on few side projects (mostly web design) for few small clients.</p>
+	  	</div>
+	  </section>
+
 	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script>
+	// Simple paralax effect
+		$(window).scroll(function() {
+	    var scroll = $(window).scrollTop();
+	    $('.intro').css('top',  window.scrollY/1.5 + 'px');
+		});
+	</script>
 </html>
