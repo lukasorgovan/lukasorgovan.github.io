@@ -194,5 +194,8 @@ a .project {
 	a {
 		width: 100%;
 	}
+	.box {
+		padding: 2%;
+	}
 
 }
