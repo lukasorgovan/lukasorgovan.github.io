@@ -37,25 +37,87 @@
 	  	</div>
 	  	<div class="column">
 	  		<h3>Creative director and student-consultant</h3>
-	  		<p>At Technical University of Kosice I took part in helping other students being employed as consultant for studies at Student information and consulting centre. While providing benefitial information to students I've been working on numerous projects since I joined this non-profit organization. had an oportunity to lead small group of people (3-4) and represent my University on numerous study exhibits like ProEduco, DniKariéry, Academia Vapac... I was also responsible for creating website for this organization, visual identity and I am cooperating on University magazine named HALÓ</p>
+	  		<p>At Technical University of Kosice I took part in helping other students being employed as consultant for studies at Student information and consulting centre. While providing benefitial information to students I've been working on numerous projects since I joined this non-profit organization. had an oportunity to lead small group of people (3-4) and represent my University on numerous study exhibits. I was also responsible for creating website for this organization, visual identity and I am cooperating on University magazine named HALÓ.</p>
 	  	</div>
 	  	<div class="column left">
-	  		<h3>Selfemployed</h3>
+	  		<h3>Freelnace</h3>
 	  		<span>2010 - 2012</span>
 	  	</div>
 	  	<div class="column">
 	  		<h3>Web design &amp; developement</h3>
-	  		<p>Within my studies I worked on few side projects (mostly web design) for few small clients.</p>
+	  		<p>Within my studies I worked on few side projects (mostly web design) for few small clients, using mostly HTML, CSS, JavaScript, PHP &amp; MySQL.</p>
 	  	</div>
 	  </section>
-
+	  <section class="box skills">
+			<h2>Skills</h2>
+	  	<hr/>
+	  	<div id="skillWrapper">
+	  		<span class="skill" data-range="90"><strong>HTML</strong></span>
+	  		<span class="skill" data-range="90"><strong>CSS</strong></span>
+	  		<span class="skill" data-range="80"><strong>JavaScript</strong></span>
+	  		<span class="skill" data-range="80"><strong>jQuery</strong></span>
+	  		<span class="skill" data-range="70"><strong>MySQL</strong></span>
+	  		<span class="skill" data-range="60"><strong>Responsive</strong></span>
+	  		<span class="skill" data-range="50"><strong>Design</strong></span>
+	  		<span class="skill" data-range="35"><strong>Ember.js</strong></span>
+	  		<span class="skill" data-range="30"><strong>PHP</strong></span>
+	  	</div>
+	  	<p>I also know about JSON, XML, AJAX, MVC, OOP, SASS, UX.</p>
+		</section>
+		<section class="box projects">
+			<h2>Projects</h2>
+	  	<hr/>
+	  	<a href="http://www.beinsports.fr/videos" target="_blank">
+			<div class="project">
+				<h3>beIN Sports FR</h3>
+				<p>beIN Sport is a global network of sports channels jointly owned and operated by Qatari Sports Investments, an affiliate of Al Jazeera Media Networks</p>
+			</div>
+		</a>
+		<a href="http://www.beinsports.tv" target="_blank">
+			<div class="project">
+				<h3>beIN Sports US</h3>
+				<p>On beIN Sport projects we utilize massive mutlimedia site using modern technologies, JavaScript, jQuery, CSS3 &amp; Freemarker</p>
+			</div>
+		</a>
+			<div class="project">
+				<h3>VIX Access Controller</h3>
+				<p>I have been part of small team developing front-end solution for VIX Technology Australia based on MVC JavaScript framework Ember.js, jQuery, HTML5 and CSS3</p>
+			</div>
+		</section>
+		<section class="box contact">
+			<h3>Social media</h3>
+			<a href="http://www.dribbble.com/lukasorgovan" target="_blank">
+				<div data-name="social-dribbble-circular" data-code="0xe0e2" data-match=" social dribbble circular " class="icon"><span class="typcn typcn-social-dribbble-circular"></span></div>
+			</a>
+			<a href="http://www.github.com/lukasorgovan" target="_blank">
+				<div data-name="social-github-circular" data-code="0xe0e8" data-match=" social github circular " class="icon"><span class="typcn typcn-social-github-circular"></span></div>
+			</a>
+			<a href="http://www.twitter.com/lukasorgovan" target="_blank">
+				<div data-name="social-twitter-circular" data-code="0xe0f8" data-match=" social twitter circular " class="icon"><span class="typcn typcn-social-twitter-circular"></span></div>
+			</a>
+			<a href="http://sk.linkedin.com/in/lukasorgovan/" target="_blank">
+				<div data-name="social-linkedin-circular" data-code="0xe0f0" data-match=" social linkedin circular " class="icon"><span class="typcn typcn-social-linkedin-circular"></span></div>
+			</a>
+		</section>
 	</body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script>
-	// Simple paralax effect
+		// Simple paralax effect and skills transition
+		var skills = $('#skillWrapper'),
+		    animated = false;
+
 		$(window).scroll(function() {
 	    var scroll = $(window).scrollTop();
 	    $('.intro').css('top',  window.scrollY/1.5 + 'px');
+
+			//Skills
+	    if ((skills.offset().top - skills.height() - 300) <= window.scrollY && !animated) {
+	    	animated = true;
+	    	$('.skill').each(function() {
+	    		$(this).css('width', $(this).data('range') + '%');
+	    	});
+	    }
 		});
+
 	</script>
 </html>
