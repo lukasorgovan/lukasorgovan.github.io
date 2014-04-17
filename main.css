@@ -185,4 +185,15 @@ a .project {
   .column, .project {
   	font-size: 0.7em;
   }
+  .column {
+  	width: 100%;
+  	float: none;
+  }
+  .project.nolink {
+		width: 100%;
+	}
+	a {
+		width: 100%;
+	}
+
 }
