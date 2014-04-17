@@ -139,13 +139,14 @@ hr {
 .project ul {
 	list-style-type: circle;
 	text-align: left;
-	margin-left: 100px;
+	margin-left: 35px;
 }
 .project h3 {
 	margin: 10px 0 20px 0;
 }
 a {
 	color: #e74c3c;
+	text-decoration: none;
 }
 a .project {
 	color: #ffffff;
