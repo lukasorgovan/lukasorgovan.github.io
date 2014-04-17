@@ -76,10 +76,6 @@ hr {
 .about, .contact {
 	background-color: #eff3f3;
 }
-.experience {
-	height: 500px;
-	z-index: 3;
-}
 .box:not(.about) h2 {
 	color: #ffffff;
 }
@@ -188,6 +184,9 @@ a .project {
   .column {
   	width: 100%;
   	float: none;
+  }
+  .column.left {
+  	width: 100%;
   }
   .project.nolink {
 		width: 100%;
