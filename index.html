@@ -122,12 +122,11 @@
 	</body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script>
-		// Simple paralax effect and skills transition
+
 		var skills = $('#skillWrapper'),
 		    animated = false;
 
 		$(window).scroll(function() {
-	    $('.intro').css('top',  window.scrollY/1.5 + 'px');
 
 			//Skills
 	    if ((skills.offset().top - skills.height() - 300) <= window.pageYOffset && !animated) {
