@@ -71,17 +71,35 @@
 			<div class="project">
 				<h3>beIN Sports FR</h3>
 				<p>beIN Sport is a global network of sports channels jointly owned and operated by Qatari Sports Investments, an affiliate of Al Jazeera Media Networks</p>
+				<h3>Roles</h3>
+				<ul>
+					<li>Interpreting graphic visual or interaction designs in HTML, CSS and Javascript</li>
+					<li>Programming interaction with JavaScript and/or a library such as jQuery.</li>
+					<li>Testing cross-browser, cross-platform, and/or cross-device compatibility for inconsistencies.</li>
+				</ul>
 			</div>
 		</a>
 		<a href="http://www.beinsports.tv" target="_blank">
 			<div class="project">
 				<h3>beIN Sports US</h3>
 				<p>On beIN Sport projects we utilize massive mutlimedia site using modern technologies, JavaScript, jQuery, CSS3 &amp; Freemarker</p>
+				<h3>Roles</h3>
+				<ul>
+					<li>Writing Continuos integration tests with Casper.js</li>
+					<li>Interpreting graphic visual or interaction designs in HTML, CSS and Javascript</li>
+					<li>Testing cross-browser, cross-platform, and/or cross-device compatibility for inconsistencies.</li>
+				</ul>
 			</div>
 		</a>
 			<div class="project">
 				<h3>VIX Access Controller</h3>
-				<p>I have been part of small team developing front-end solution for VIX Technology Australia based on MVC JavaScript framework Ember.js, jQuery, HTML5 and CSS3</p>
+				<p>I have been part of small team developing front-end solution for VIX Technology Australia based on MVC JavaScript framework Ember.js</p>
+				<h3>Roles</h3>
+				<ul>
+					<li>Creating basic user experience</li>
+					<li>Developing application using MVC Ember.js and Handlebars</li>
+					<li>Testing cross-browser compatibility</li>
+				</ul>
 			</div>
 		</section>
 		<section class="box contact">
@@ -107,11 +125,10 @@
 		    animated = false;
 
 		$(window).scroll(function() {
-	    var scroll = $(window).scrollTop();
 	    $('.intro').css('top',  window.scrollY/1.5 + 'px');
 
 			//Skills
-	    if ((skills.offset().top - skills.height() - 300) <= window.scrollY && !animated) {
+	    if ((skills.offset().top - skills.height() - 300) <= window.pageYOffset && !animated) {
 	    	animated = true;
 	    	$('.skill').each(function() {
 	    		$(this).css('width', $(this).data('range') + '%');
