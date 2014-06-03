@@ -201,3 +201,22 @@ a .project:hover {
 	}
 
 }
+/* Print styles */
+@media print {
+	body { 
+		font-size: 12px;
+	}
+	.contact {
+		display: none;
+	}
+	.projects {
+		width: 90%;
+	}
+	.skill {
+		width: 10% !important;
+		float: left;
+	}
+	.skills p {
+		clear: both;
+	}
+}
