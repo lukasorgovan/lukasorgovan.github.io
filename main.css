@@ -204,17 +204,17 @@ a .project:hover {
 /* Print styles */
 @media print {
 	body { 
-		font-size: 12px;
+		font-size: 11px;
 	}
 	.contact {
 		display: none;
 	}
 	.projects {
-		width: 90%;
+		width: 16cm !important;
 	}
 	.skill {
-		width: 10% !important;
-		float: left;
+		width: 3cm !important;
+		float: left !important;
 	}
 	.skills p {
 		clear: both;
