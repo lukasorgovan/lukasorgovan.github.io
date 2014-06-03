@@ -36,6 +36,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .typcn {
 	line-height: 1em;
 }
+@media screen {
 /* MAIN STYLES */
 body {
 	background-color: #0eb282;
@@ -161,6 +162,7 @@ a .project:hover {
 	font-size: 3em;
 	text-align: center;
 }
+}
 /* Media queries */  
 @media screen and (max-width: 900px) {
   .intro {
@@ -204,19 +206,65 @@ a .project:hover {
 /* Print styles */
 @media print {
 	body { 
-		font-size: 11px;
+		font-family: 'Roboto', Helvetica, Arial, sans-serif;
+		font-size: 12pt;
+		color: #333;
+	}
+	.photo {
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+		background: url('https://media.licdn.com/mpr/mpr/shrink_200_200/p/5/005/01d/32a/1c3c99d.jpg') no-repeat;
+		float: right;
+	}
+	.intro {
+		font-size: 18pt;
+		font-weight: bold;
+	}
+	.intro h1 {
+		color: #ccc;
+		margin-top: 20%;
+	}
+	.intro h2 {
+		font-size: 16pt;
+		color: #2c3e50;
+	}
+	h2 {
+		font-size: 15pt;
+		color: #2c3e50;
+	}
+	h2, h3 {
+		margin: 10pt auto;
+	}
+	span {
+		color: #ccc;
 	}
 	.contact {
 		display: none;
 	}
-	.projects {
-		width: 16cm !important;
+	section {
+		margin: 1cm auto;
+	}
+	.project {
+		margin: 1cm;
+		font-size: 10pt;
+	}
+	.project h3 {
+		color: #ccc;
+		margin: 4pt auto;
+	}
+	.projects a {
+		width: 16cm;
+		text-decoration: none;
+		color: #333;
 	}
 	.skill {
-		width: 3cm !important;
-		float: left !important;
+		width: 3cm;
+		float: left;
 	}
 	.skills p {
 		clear: both;
+		margin: 10pt;
+		padding: 5pt auto;
 	}
 }
