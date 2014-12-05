@@ -112,7 +112,7 @@ hr {
 	background-color: rgb(8, 142, 160);
 	margin: 5px 0;
 	border-radius: 5px;
-	transition: all 1.5s ease-in;
+	transition: all 1.0s ease-in;
 	font-size: 0.8em;
 	padding: 0 10px;
  }
